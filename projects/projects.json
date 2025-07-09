@@ -1,0 +1,64 @@
+[
+  
+  {
+    "name": "LUMOS",
+    "desc": "online platform that connects Freelancers and clients.    Stack : HTML,CSS,JS,PHP,SQL",
+    "image": "instagrammern",
+    "category": "lamp",
+    "links": {
+      "view": "https://github.com/Digeee/LUMOS.git",
+      "code": "https://github.com/Digeee/LUMOS.git"
+    }
+  },
+  {
+    "name": "Medicare Plus",
+    "desc": "Hospital Management System.<br>Stack : JAVA,PHP,SQL",
+    "image": "flipkartmern",
+    "category": "lamp", 
+    "links": {
+      "view": "https://flipkartwebs.herokuapp.com/",
+      "code": "https://github.com/jigar-sable/flipkart-mern"
+    }
+  },
+  {
+    "name": "SLIIT CITY UNI Moodle High-Fidelty Design",
+    "desc": "Redesign Our Moodle Page to Improve User Experience.<br>Stack : Figma",
+    "image": "resumegen",
+    "category": "figma",
+    "links": {
+      "view": "https://www.figma.com/proto/XUhpXxSQU95MjHXRTXtjlN/GRP--2-VLE?page-id=0%3A1&node-id=182-744&p=f&viewport=-2848%2C4052%2C1.38&t=s8sTJMfjDcJjrVAK-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=182%3A744&show-proto-sidebar=1",
+      "code": "https://github.com/jigar-sable/flipkart-mern"
+    }
+  },
+  {
+    "name": " Student Record System ",
+    "desc": " Automates all the student records and provides a user-friendly interface for managing student data.<br> Stack : HTML ,BOOTSTRAP,JQUERY,AJAX,JSON,NODEJS",
+    "image": "reactprojects",
+    "category": "mern",
+    "links": {
+      "view": "https://github.com/Digeee/StudentRecordSystem.git",
+      "code": "https://github.com/Digeee/StudentRecordSystem.git"
+    }
+  },
+  {
+    "name": "Flag_Game",
+    "desc": "An Android Based Application that allows users to guess the flags of different countries.<br>Stack : AndroidStudio,Java",
+    "image": "flipkartphp",
+    "category": "android",
+    "links": {
+      "view": "https://github.com/Digeee/Flag_Game.git",
+      "code": "https://github.com/Digeee/Flag_Game.git"
+    }
+  },
+  {
+    "name": "My Portfolio",
+    "desc": "A personal portfolio website to showcase my skills, projects, and experiences.<br>Stack : HTML,CSS,JS",
+    "image": "jspro",
+    "category": "basicweb",
+    "links": {
+      "view": "https://jigar-sable.github.io/JavaScript-Projects",
+      "code": "https://github.com/jigar-sable/JavaScript-Projects"
+    }
+  }
+  
+]
