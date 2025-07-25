@@ -1328,3 +1328,228 @@ form .button-area {
 .certifications .box .btn {
     margin-top: 15px; /* Adds some space between the button and the content */
 }
+
+/* University Module Sessions Section - Light Background Version */
+.university-modules {
+  padding: 3rem 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 2rem auto;
+  max-width: 1200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.university-modules::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(79, 172, 254, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+  z-index: -1;
+}
+
+.university-modules .heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.university-modules .heading span {
+  color: #4facfe;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.university-modules .heading i {
+  margin-right: 15px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Sessions Grid */
+.sessions {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Session Cards */
+.session-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  color: #333;
+  overflow: hidden;
+  position: relative;
+}
+
+.session-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.session-date {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(79, 172, 254, 0.15);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #4facfe;
+  backdrop-filter: blur(5px);
+}
+
+.session-category {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+}
+
+.session-category.career {
+  background: rgba(156, 39, 176, 0.1);
+  color: #9c27b0;
+}
+
+.session-category.professional {
+  background: rgba(33, 150, 243, 0.1);
+  color: #2196f3;
+}
+
+.session-category.technical {
+  background: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+}
+
+.session-title {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  color: #222;
+  line-height: 1.4;
+}
+
+.session-instructor {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.session-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.image-holder {
+  height: 180px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.session-card:hover .image-holder img {
+  transform: scale(1.05);
+}
+
+.image-holder::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.15));
+  z-index: 1;
+}
+
+/* Buttons */
+.view-more {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+}
+
+.view-more:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(79, 172, 254, 0.4);
+}
+
+.view-more-section {
+  grid-column: 1 / -1;
+  margin: 2rem auto 0;
+  padding: 12px 30px;
+  border: 2px solid #4facfe;
+  border-radius: 30px;
+  background: transparent;
+  color: #4facfe;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.view-more-section:hover {
+  background: rgba(79, 172, 254, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(79, 172, 254, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sessions {
+    grid-template-columns: 1fr;
+  }
+  
+  .university-modules .heading {
+    font-size: 2rem;
+  }
+}
+

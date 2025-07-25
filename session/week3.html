@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Details - Introduction to IT Industry</title>
+    <link rel="stylesheet" href="week.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@500;700&family=Exo+2:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Additional inline styles for animations */
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .typing-effect {
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid #6e48aa;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #6e48aa; }
+        }
+        
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+        
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background-color: #f00;
+            opacity: 0;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div class="particles" id="particles-js"></div>
+    <div class="container">
+        <div class="header animate__animated animate__fadeInDown">
+            <h1 id="typing-title"></h1>
+            <p class="floating">Week 1</p>
+            <div class="glow"></div>
+        </div>
+
+        <div class="session-info animate__animated animate__fadeIn">
+            <p><i class="fas fa-chalkboard-teacher pulse"></i> Instructor: Ms. Gowrisha</p>
+            <p><i class="fas fa-calendar-alt pulse"></i> Date: <span id="current-date"></span></p>
+        </div>
+
+        <div class="session-overview glass animate__animated animate__fadeIn" data-animation="slideUp">
+            <h2><i class="fas fa-info-circle"></i> Session Overview</h2>
+            <p>This session provided an introduction to essential professional and employability skills necessary to succeed in the IT industry, including technical and soft skills, values, beliefs, attitudes, and character development.</p>
+        </div>
+
+        <div class="key-topics glass animate__animated animate__fadeIn animate__delay-1s" data-animation="slideUp">
+            <h2><i class="fas fa-key"></i> Key Topics Covered</h2>
+            <ul>
+                <li><strong>Professional and Employability Skills</strong> - An overview of the soft and technical skills that complement one's technical expertise.</li>
+                <li><strong>Workplace Skills Classification</strong> - Understanding technical, soft, and transferable skills.</li>
+                <li><strong>Values, Beliefs, Attitudes, and Character</strong> - The importance of personal values, beliefs, and attitudes in career growth.</li>
+            </ul>
+        </div>
+
+        <div class="key-takeaways glass animate__animated animate__fadeIn animate__delay-1s" data-animation="slideUp">
+            <h2><i class="fas fa-lightbulb"></i> Key Takeaways</h2>
+            <ul>
+                <li><strong>Continuous Learning</strong> - Always seek opportunities for learning through courses, workshops, or online resources.</li>
+                <li><strong>Seek Feedback</strong> - The value of actively requesting feedback to improve and grow professionally.</li>
+                <li><strong>Embrace Challenges</strong> - Take on new challenges to step out of your comfort zone and enhance your skills.</li>
+            </ul>
+        </div>
+
+        <div class="session-details glass animate__animated animate__fadeIn animate__delay-2s" data-animation="slideUp">
+            <h2><i class="fas fa-list-alt"></i> Session Details</h2>
+            <ul>
+                <li>The importance of both technical and interpersonal skills in career success.</li>
+                <li>Understanding how to align your skills with the needs of an organization.</li>
+                <li>Learning about key personal attributes such as values, beliefs, and attitudes.</li>
+            </ul>
+        </div>
+
+        <div class="topic-summary glass animate__animated animate__fadeIn animate__delay-2s" data-animation="slideUp">
+            <h2><i class="fas fa-book"></i> Topic Summary</h2>
+            <p>This session emphasized the need for continuous learning, the development of professional and interpersonal skills, and the importance of aligning personal values and beliefs with career goals.</p>
+        </div>
+
+        <div class="what-was-taught glass animate__animated animate__fadeIn animate__delay-3s" data-animation="slideUp">
+            <h2><i class="fas fa-graduation-cap"></i> What Was Taught</h2>
+            <p>We learned how to enhance employability by focusing on professional skills like communication, problem-solving, teamwork, and time management. We also explored how values, beliefs, and attitudes play a vital role in career success.</p>
+        </div>
+
+        <div class="what-was-learned glass animate__animated animate__fadeIn animate__delay-3s" data-animation="slideUp">
+            <h2><i class="fas fa-brain"></i> What Was Learned</h2>
+            <p>The session emphasized the importance of aligning one's personal values and technical skills with the needs of an organization, which plays a critical role in job fit and career advancement.</p>
+        </div>
+
+        <div class="future-implementation glass animate__animated animate__fadeIn animate__delay-4s" data-animation="slideUp">
+            <h2><i class="fas fa-rocket"></i> What I Plan to Implement in the Future</h2>
+            <p>I plan to focus on developing my technical expertise, particularly in data science and software engineering, while also enhancing my communication and teamwork skills to better align with employer expectations in the IT industry.</p>
+        </div>
+
+        <div class="image-holders animate__animated animate__fadeIn animate__delay-4s">
+            <div class="glass hover-scale">
+                <img src="img/week1-3.jpeg" alt="IT Careers" class="hover-glow">
+                <p>IT Careers</p>
+            </div>
+            <div class="glass hover-scale">
+                <img src="img/week1-1.jpeg" alt="Skills Development" class="hover-glow">
+                <p>Skills Development</p>
+            </div>
+            <div class="glass hover-scale">
+                <img src="img/week1-2.jpeg" alt="Future Trends" class="hover-glow">
+                <p>Future Trends</p>
+            </div>
+        </div>
+
+        <div class="buttons animate__animated animate__fadeIn animate__delay-5s">
+            <a href="home.html" class="btn glow-on-hover hover-pulse"><i class="fas fa-home"></i> Back to Home</a>
+            <a href="week4.html" class="btn glow-on-hover hover-pulse"><i class="fas fa-arrow-right"></i> Next Session</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="Script.js"></script>
+    <script src="week.js"></script>
+
+</body>
+</html>
